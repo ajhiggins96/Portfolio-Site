@@ -1,0 +1,188 @@
+{
+    "title": {
+        "background": {
+          "url": "app/static/timeline/ski.jpg",
+          "caption": "At the top of Silver Couloir in Summit County, CO"
+        },
+        "media": {
+            "url": "app/static/timeline/blank.png"
+        },
+        "text": {
+          "headline": "Timeline: Andrew's Education and Career",
+          "text": "A broad overview of my experience.</br>From my bachelor's in Mechanical Engineering, through my early Engineering career, to my pivot to a Master of Data Science."
+        }
+    },
+    "events": [
+      {
+        "text": {
+            "headline": "<a href='https://ritchieschool.du.edu/academics-education/ug-programs/bsme-minor-mechanical-engineering'>University of Denver</a>",
+            "text": "<small>Denver, CO</small></br></br><b>Bachelor of Science in Mechanical Engineering</b></br></br>Minors of study:<ul><li>Mathematics</li><li>Physics</li><li>Spanish language</li></ul>"
+        },
+        "media": {
+          "url": "app/static/timeline/grad.jpg",
+          "caption": "On graduation day"
+        },
+        "start_date": {
+          "month": "9",
+          "year": "2014"
+        },
+        "end_date": {
+            "month": "6",
+            "year": "2019"
+        },
+        "group": "Education"
+      },
+      {
+        "text": {
+            "headline": "<a href='https://www.norgren.com/en-us/industrial-automation'>Norgren - IMI Precision Engineering</a>",
+            "text": "<small>Littleton, CO</small></br></br>Full-time gap year as <b>Engineering Change Coordinator</b>"
+        },
+        "media": {
+            "url": "app/static/timeline/imi.jpg",
+            "caption": "Testing pneumatic device flow rates"
+        },
+        "start_date": {
+            "month": "8",
+            "year": "2016"
+        },
+        "end_date": {
+            "month": "8",
+            "year": "2017"
+        },
+        "group": "Career"
+      },
+      {
+        "text": {
+            "headline": "<a href='https://www.hubbell.com/killark/en'>Killark Electric</a>",
+            "text": "<small>Saint Louis, MO</small></br></br><b>Mechanical Engineering Intern</b>"
+        },
+        "media": {
+            "url": "app/static/timeline/killark.mp4",
+            "caption": "Ingress protection testing workbench designed and manufactured by Andrew"
+        },
+        "start_date": {
+            "month": "6",
+            "year": "2018"
+        },
+        "end_date": {
+            "month": "8",
+            "year": "2018"
+        },
+        "group": "Career"
+      },
+      {
+        "text": {
+            "headline": "<a href='https://www.us.es/'>Universidad de Sevilla</a>",
+            "text": "<small>Seville, Spain</small></br></br>Semester abroad"
+        },
+        "media": {
+            "url": "app/static/timeline/sw.png",
+            "caption": "Recreating a scene from Star Wars at the Plaza de Espa&ntilde;a"
+        },
+        "start_date": {
+            "month": "8",
+            "year": "2018"
+        },
+        "end_date": {
+            "month": "11",
+            "year": "2018"
+        },
+        "group": "Education"
+      },
+      {
+        "text": {
+            "headline": "<a href='https://www.folsomskis.com/'>Folsom Custom Skis</a>",
+            "text": "<small>University of Denver, CO</small></br></br><b>Senior Design Project</b> to design and manufacture a quality control workbench, for the repeatable measurement of mechanical properites of skis:<ul><li>Stiffness</li><li>Damping factor</li><li>Dimensions</li></ul>"
+        },
+        "media": {
+            "url": "app/static/timeline/folsom.jpg",
+            "caption": "The team at the project showcase"
+        },
+        "start_date": {
+            "month": "9",
+            "year": "2018"
+        },
+        "end_date": {
+            "month": "5",
+            "year": "2019"
+        },
+        "group": "Education"
+      },
+      {
+        "text": {
+            "headline": "Camino de Santiago",
+            "text": "<small>Northern Spain</small></br></br>A 30 day, 500+ mile walking journey across the iberian peninsula, from the French Pyrenees, to the Spanish West coast."
+        },
+        "media": {
+            "url": "https://www.google.com/maps/dir/Saint-Jean-Pied-de-Port,+64220,+France/Fisterra,+A+Coru%C3%B1a,+Spain/@42.6243209,-10.5413871,6z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0xd50d5616cb5d49f:0x27d43cc64a91e1c7!2m2!1d-1.23811!2d43.163141!1m5!1m1!1s0xd292c24ce10d29d:0xe6ec667de57e52d3!2m2!1d-9.2650315!2d42.9078005!3e2!5m1!1e4?hl=en-US&entry=tts",
+            "caption": ""
+        },
+        "start_date": {
+            "month": "7",
+            "year": "2019"
+        },
+        "end_date": {
+            "month": "8",
+            "year": "2019"
+        },
+        "group": "Personal"
+      },
+      {
+        "text": {
+            "headline": "<a href='https://visserprecision.com/additive-manufacturing'>Visser Precision</a>",
+            "text": "<small>Denver, CO</small></br></br><b>Additive Engineer</b></br></br>Metal 3D printing engineering role that entailed:<ul><li>CAD modeling of support structures with Solidworks</li><li>Operating and maintaining <a href='https://www.eos.info/en-us/metal-solutions/metal-printers'>EOS</a> Laser Powder Bed Fusion machines</li><li>Manufacturing process development</li><li>Materials research</li></ul>Promoted to <b>Department Manager</b> in May, 2020 -->"
+        },
+        "media": {
+            "url": "app/static/timeline/visser_benchmark.jpg",
+            "caption": "A copper benchmarking part printed for NASA"
+        },
+        "start_date": {
+            "month": "11",
+            "year": "2019"
+        },
+        "end_date": {
+            "month": "5",
+            "year": "2020"
+        },
+        "group": "Career"
+      },
+      {
+        "text": {
+            "headline": "<a href='https://visserprecision.com/additive-manufacturing'>Visser Precision</a>",
+            "text": "<small>Denver, CO</small></br></br><b>Additive Manufacturing Department Manager</b></br></br>Hired, trained, and lead a team of 4 employees. Managed each facet of the business pipeline for at least some time while training employees to take over:<ul><li>Sales and customer relations</li><li>Job quoting and contract review</li><li>Procurement</li><li>Scheduling</li><li>Computer Aided Design</li><li>Compliance documentation</li></ul>"
+        },
+        "media": {
+            "url": "app/static/timeline/vp.png",
+            "caption": "Company logo during and after printing"
+        },
+        "start_date": {
+            "month": "5",
+            "year": "2020"
+        },
+        "end_date": {
+            "month": "2",
+            "year": "2022"
+        },
+        "group": "Career"
+      },
+      {
+        "text": {
+            "headline": "<a href='https://www.ischool.berkeley.edu/programs/mids'>UC Berkeley School of Information</a>",
+            "text": "<small>Berkeley, CA (remote)</small></br></br><b>Master of Information and Data Science</b></br></br>A career pivot towards tech.</br>Gained proficiency in frequentist and Bayesian statistics, Python data science frameworks, and the following specialized concepts:<ul><li>Computer vision and image classification</li><li>Natural language processing and generation</li><li>Systems engineering with Docker, Kubernetes, and cloud compute platforms (AWS, MS, GCP)</li><li>Data visualization on the front end (Tableau, Altair, D3.js)</li></ul>"
+        },
+        "media": {
+          "url": "app/static/timeline/demo.mp4",
+          "caption": "Capstone project demonstration. <a href='https://www.ischool.berkeley.edu/projects/2024/skinscreen'>SkinScreen</a>: a skin cancer classification webapp."
+        },
+        "start_date": {
+          "month": "9",
+          "year": "2022"
+        },
+        "end_date": {
+            "month": "4",
+            "year": "2024"
+        },
+        "group": "Education"
+      }
+    ]
+}

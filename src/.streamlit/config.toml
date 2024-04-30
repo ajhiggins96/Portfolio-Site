@@ -1,0 +1,14 @@
+[theme]
+primaryColor="#fca311"
+backgroundColor="#04151f"
+secondaryBackgroundColor="#14213d"
+textColor="#e5e5e5"
+font="sans serif"
+
+[server]
+address = "localhost"
+port = 8501
+enableStaticServing = true
+
+[logger]
+level = "warning"
