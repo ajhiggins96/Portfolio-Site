@@ -9,6 +9,7 @@ font="sans serif"
 address = "localhost"
 port = 8501
 enableStaticServing = true
+runOnSave = true
 
 [logger]
 level = "warning"

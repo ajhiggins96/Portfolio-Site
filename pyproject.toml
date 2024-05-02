@@ -9,6 +9,7 @@ readme = "README.md"
 python = "^3.10"
 streamlit = "^1.33.0"
 streamlit-timeline = "*"
+streamlit-lottie = "*"
 
 
 [build-system]
