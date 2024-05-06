@@ -33,7 +33,7 @@ with overview:
         <p>Check out the timeline below for a brief history of my education and career journey.</p>
         """
     )
-    with open("static/json/timeline.json", 'r') as f:
+    with open("static/timeline/timeline.json", 'r') as f:
         data = f.read()
     timeline.timeline(data)
 

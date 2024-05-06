@@ -161,7 +161,3 @@ cython_debug/
 
 # iOS finder junk
 .DS_Store
-
-/static/image/*
-/static/json/*
-/static/timeline/*

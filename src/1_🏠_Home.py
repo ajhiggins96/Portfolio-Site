@@ -28,12 +28,16 @@ with st.container():
 
     st.markdown(
         """
-            I like to do data science.
+            I'm searching for full-time employment as a **data scientist**, data engineer, or analyst 
+            at a company that values **teamwork**, life long **education**, and improving the human condition.  
+
+            Explore the pages in the sidebar to learn more about me, my past work, and my future goals.
         """
     )
 
 # Skills
 with st.container():
+
     # Load a Lottie animation from a URL
     def load_lottieurl(url: str):
         r = requests.get(url)
