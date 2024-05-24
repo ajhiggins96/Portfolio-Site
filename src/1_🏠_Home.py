@@ -1,6 +1,7 @@
 import streamlit as st
 from streamlit_lottie import st_lottie
 import requests
+from utils.GPT_utils import ask_bot
 
 st.set_page_config(page_title='Andrew Higgins', layout='centered', page_icon='👤')
 
@@ -34,6 +35,21 @@ with st.container():
             Explore the pages in the sidebar to learn more about me, my past work, and my future goals.
         """
     )
+
+# Chat bot
+with st.container():
+    st.subheader("🤖 Ask my chat bot assistant about me")
+    with st.expander("Enter your OpenAI API Key first"):
+        st.markdown("Use an existing key or generate one [here](https://platform.openai.com/settings/profile?tab=api-keys).  \nIt will never be saved here, I promise.")
+        openai_api_key = st.text_input("Key (starts with 'sk-')", type="password")
+        
+    user_input = st.text_input("Enter your question:", key="input", placeholder="e.g. What does Andrew like to do for fun?")
+    if user_input:
+        if not openai_api_key.startswith('sk-'):
+            st.warning('Please enter your OpenAI API key above.', icon='⚠')
+        if openai_api_key.startswith('sk-'):
+            #st.info(ask_bot(user_input, openai_api_key))
+            st.markdown("### ⚠️🚧 Bot Under Construction 🚧⚠️ \nTry again another day.")
 
 # Skills
 with st.container():
