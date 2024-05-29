@@ -2,7 +2,7 @@ import streamlit as st
 import streamlit_timeline as timeline
 import base64
 
-st.set_page_config(page_title='About Andrew', layout='wide', page_icon='👤', initial_sidebar_state='collapsed')
+st.set_page_config(page_title='About Andrew', layout='wide', page_icon='👤', initial_sidebar_state='auto')
 
 # ----- Sidebar -----
 
@@ -15,8 +15,7 @@ with st.sidebar:
         - Outdoor enthusiast (YEWW)
         """
     )
-    st.image('static/image/profile_pic.jpg', caption="Andrew at a mountain biking & hotdog eating competiton in Salida, CO")
-    st.divider()
+    st.image('static/image/profile_pic.png', caption="Andrew at a mountain biking & hotdog eating competiton in Salida, CO")
     st.markdown('## Contact me')
     st.html('<a href="mailto:ajhiggins96@gmail.com">ajhiggins96@gmail.com</a>')
 
@@ -24,7 +23,7 @@ with st.sidebar:
 
 primary_color = st.get_option('theme.primaryColor')
 
-tab_names = ['🗓️ Timeline Overview', 'Experience', 'Education', 'Hobbies', 'Resume']
+tab_names = ['Timeline Overview', 'Experience', 'Education', 'Hobbies', 'Resume']
 overview, experience, education, hobbies, resume = st.tabs(tab_names)
 
 with overview:

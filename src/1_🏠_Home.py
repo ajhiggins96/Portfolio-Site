@@ -1,7 +1,7 @@
 import streamlit as st
 from streamlit_lottie import st_lottie
 import requests
-from utils.GPT_utils import ask_bot
+#from utils.GPT_utils import ask_bot
 
 st.set_page_config(page_title='Andrew Higgins', layout='centered', page_icon='👤')
 
@@ -16,8 +16,7 @@ with st.sidebar:
         - Outdoor enthusiast (YEWW)
         """
     )
-    st.image('static/image/profile_pic.jpg', caption="Andrew at a mountain biking & hotdog eating competiton in Salida, CO")
-    st.divider()
+    st.image('static/image/profile_pic.png', caption="Andrew at a mountain biking & hotdog eating competiton in Salida, CO")
     st.subheader('Contact me')
     st.html('<a href="mailto:ajhiggins96@gmail.com">ajhiggins96@gmail.com</a>')
 
@@ -29,8 +28,9 @@ with st.container():
 
     st.markdown(
         """
-            I'm searching for full-time employment as a **data scientist**, data engineer, or analyst 
-            at a company that values **teamwork**, life long **education**, and improving the human condition.  
+            I am seeking a challenging role as a **data scientist, analyst, or engineer** at a company that values the names and faces behind the numbers.  
+            
+            Before completing a Master of Information and Data Science at UC Berkeley, I began a career as an Additive Manufacturing Engineer at Visser Precision LLC. I then quickly rose to become Department Manager of all Metal 3D Printing operations. I received a BS Mechanical Engineering at the University of Denver, during which I worked a couple of full-time Mechanical Engineering internships.   
 
             Explore the pages in the sidebar to learn more about me, my past work, and my future goals.
         """
