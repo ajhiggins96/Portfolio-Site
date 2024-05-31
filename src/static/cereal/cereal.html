@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Theme Made By www.w3schools.com - No Copyright -->
+    <title>Cereal Nutrients</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+        body {
+            font: 20px Montserrat, sans-serif;
+            line-height: 1.8;
+            color: #f5f6f7;
+        }
+
+        p {
+            font-size: 16px;
+        }
+
+        .margin_top {
+            margin-top: 100px;
+            margin-bottom: 45px;
+        }
+
+        .margin {
+            margin-bottom: 45px;
+        }
+
+        .bg-1 {
+            background-color: #1abc9c;
+            /* Green */
+            color: #ffffff;
+        }
+
+        .bg-2 {
+            background-color: #474e5d;
+            /* Dark Blue */
+            color: #ffffff;
+        }
+
+        .bg-3 {
+            background-color: #ffffff;
+            /* White */
+            color: #555555;
+        }
+
+        .bg-4 {
+            background-color: #2f2f2f;
+            /* Black Gray */
+            color: #fff;
+        }
+
+        .container-fluid {
+            padding-top: 70px;
+            padding-bottom: 70px;
+        }
+
+        .navbar {
+            padding-top: 15px;
+            padding-bottom: 15px;
+            border: 0;
+            border-radius: 0;
+            margin-bottom: 0;
+            font-size: 12px;
+            letter-spacing: 5px;
+            position: fixed;
+            /* Set the navbar to fixed position */
+            top: 0;
+            /* Position the navbar at the top of the page */
+            width: 100%;
+            /* Full width */
+            z-index: 10;
+            /* Send to front */
+        }
+
+        .navbar-nav li a:hover {
+            color: #1abc9c !important;
+        }
+
+        .disabled {
+            pointer-events: none;
+            cursor: default;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-default disabled">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Explore:</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#macro">Macronutrients</a></li>
+                    <li><a href="#calsugar">Calories & Sugar</a></li>
+                    <li><a href="#micro">Micronutrients</a></li>
+                    <li><a href="#milk">Milk</a></li>
+                    <li><a href="#gluten">Gluten Free</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Overview -->
+    <div class="container-fluid bg-1 text-center">
+        <h3 class="margin_top">Cereal Nutritonal Information</h3>
+        <h3>Learn exactly what's in your morning cereal so you can start your day off right.</h3>
+        <h3>Explore the visualizations on this page to learn more!</h3>
+        <p>Data source: US Department of Agriculture's
+            <a
+                href='https://data.nal.usda.gov/dataset/composition-foods-raw-processed-prepared-usda-national-nutrient-database-standard-reference-release-28-0' target="_blank" rel="noopener noreferrer">
+                National Nutrient Database for Standard Reference
+            </a>
+            .
+        </p>
+    </div>
+
+    <!-- Cereal macronutrients -->
+    <div id="macro" , class="container-fluid bg-2 text-center">
+        <h3 class="margin">Cereal Macronutrients</h3>
+        <p>There is no dearth of brands to choose from when it comes to breakfast cereals.
+            This tool makes that decision easier, by showing the average sugar and fat content in cereals from the most
+            popular brands.
+            Moreover, it also allows users to filter down and select individual cereals based on total calories or a
+            specific macronutrient</p>
+        <div class='tableauPlaceholder' id='viz1691595075286' style='position: relative'><noscript><a href='#'><img
+                        alt='Battle of the Cereal Brands (click on brand name in top panel to filter) '
+                        src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ce&#47;CerealBrandWars&#47;BattleoftheCerealBrands&#47;1_rss.png'
+                        style='border: none' /></a></noscript><object class='tableauViz' style='display:none;'>
+                <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+                <param name='embed_code_version' value='3' />
+                <param name='site_root' value='' />
+                <param name='name' value='CerealBrandWars&#47;BattleoftheCerealBrands' />
+                <param name='tabs' value='no' />
+                <param name='toolbar' value='yes' />
+                <param name='static_image'
+                    value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ce&#47;CerealBrandWars&#47;BattleoftheCerealBrands&#47;1.png' />
+                <param name='animate_transition' value='yes' />
+                <param name='display_static_image' value='yes' />
+                <param name='display_spinner' value='yes' />
+                <param name='display_overlay' value='yes' />
+                <param name='display_count' value='yes' />
+                <param name='language' value='en-US' />
+            </object></div>
+        <script type='text/javascript'>                    
+            var divElement = document.getElementById('viz1691595075286'); 
+            var vizElement = divElement.getElementsByTagName('object')[0]; 
+            if (divElement.offsetWidth > 800) {
+                vizElement.style.width = '1366px'; 
+                vizElement.style.height = '795px'; 
+            } else if (divElement.offsetWidth > 500) {
+                vizElement.style.width = '1366px'; 
+                vizElement.style.height = '795px'; 
+            } else { 
+                vizElement.style.width = '100%'; 
+                vizElement.style.height = '1377px'; 
+            } 
+            var scriptElement = document.createElement('script'); 
+            scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js'; 
+            vizElement.parentNode.insertBefore(scriptElement, vizElement);                
+        </script>
+    </div>
+
+    <!-- Calories and Sugar -->
+    <div id="calsugar" , class="container-fluid bg-2 text-center">
+        <h3 class="margin">Calories & Sugar content of popular brands</h3>
+        <p>Calories and Sugar are often the first nutrients one considers when deciding which ready to eat cereal to
+            consume in the morning.
+            Depending on energy needs, each person may prefer a different calorie/sugar tradeoff.
+            This tool will help compare cereals and discover which may suite individual nutrition needs. </p>
+        <div class='tableauPlaceholder' id='viz1691595129267' style='position: relative'><noscript><a href='#'><img
+                        alt='Dashboard 1 '
+                        src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;JB&#47;JB_RTE_Cereal_Comparison&#47;Dashboard1&#47;1_rss.png'
+                        style='border: none' /></a></noscript><object class='tableauViz' style='display:none;'>
+                <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+                <param name='embed_code_version' value='3' />
+                <param name='site_root' value='' />
+                <param name='name' value='JB_RTE_Cereal_Comparison&#47;Dashboard1' />
+                <param name='tabs' value='no' />
+                <param name='toolbar' value='yes' />
+                <param name='static_image'
+                    value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;JB&#47;JB_RTE_Cereal_Comparison&#47;Dashboard1&#47;1.png' />
+                <param name='animate_transition' value='yes' />
+                <param name='display_static_image' value='yes' />
+                <param name='display_spinner' value='yes' />
+                <param name='display_overlay' value='yes' />
+                <param name='display_count' value='yes' />
+                <param name='language' value='en-US' />
+            </object></div>
+        <script type='text/javascript'>
+            var divElement = document.getElementById('viz1691595129267');
+            var vizElement = divElement.getElementsByTagName('object')[0];
+            if (divElement.offsetWidth > 800) {
+                vizElement.style.width = '1000px'; vizElement.style.height = '827px';
+            } else if (divElement.offsetWidth > 500) {
+                vizElement.style.width = '1000px'; vizElement.style.height = '827px';
+            } else { 
+                vizElement.style.width = '100%'; 
+                vizElement.style.height = '2177px'; 
+            } 
+            var scriptElement = document.createElement('script'); 
+            scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js'; 
+            vizElement.parentNode.insertBefore(scriptElement, vizElement);                
+        </script>
+    </div>
+
+    <!-- Cereal micronutrients -->
+    <div id="micro" , class="container-fluid bg-2 text-center">
+        <h3 class="margin">Cereal Micronutrients</h3>
+        <p>This vizualization allows you to compare micronutrients of the 4 major cereal brands. At a high level you can
+            compare which brands have higher micronutrient value. To dig deeper, you can scroll over each colored circle
+            to get the specific cereal and the micronutrient content. On the right, you can adjust the sliders to filter
+            the cereals with the exact micronutrient values you are looking for.</p>
+        <div class='tableauPlaceholder' id='viz1691358401765' style='position: relative'><noscript><a href='#'><img
+                        alt=' '
+                        src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;20&#47;209FinalProjectWorksheet-MicronutrientsofDifferentCereals&#47;Dashboard1&#47;1_rss.png'
+                        style='border: none' /></a></noscript><object class='tableauViz' style='display:none;'>
+                <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+                <param name='embed_code_version' value='3' />
+                <param name='site_root' value='' />
+                <param name='name' value='209FinalProjectWorksheet-MicronutrientsofDifferentCereals&#47;Dashboard1' />
+                <param name='tabs' value='no' />
+                <param name='toolbar' value='yes' />
+                <param name='static_image'
+                    value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;20&#47;209FinalProjectWorksheet-MicronutrientsofDifferentCereals&#47;Dashboard1&#47;1.png' />
+                <param name='animate_transition' value='yes' />
+                <param name='display_static_image' value='yes' />
+                <param name='display_spinner' value='yes' />
+                <param name='display_overlay' value='yes' />
+                <param name='display_count' value='yes' />
+                <param name='language' value='en-US' />
+            </object></div>
+        <script type='text/javascript'>
+            var divElement = document.getElementById('viz1691358401765');
+            var vizElement = divElement.getElementsByTagName('object')[0];
+            if (divElement.offsetWidth > 800) {
+                vizElement.style.width = '100%';
+                vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px';
+            } else if (divElement.offsetWidth > 500) {
+                vizElement.style.width = '100%';
+                vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px';
+            } else {
+                vizElement.style.width = '100%';
+                vizElement.style.height = '877px';
+            }
+            var scriptElement = document.createElement('script');
+            scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+            vizElement.parentNode.insertBefore(scriptElement, vizElement);                
+        </script>
+    </div>
+
+    <!-- Milk -->
+    <div id="milk" , class="container-fluid bg-2 text-center">
+        <h3 class="margin">Milk Macronutrients</h3>
+        <p>Everyone knows you can't have cereal without milk!
+            Use this tool to compare and contrast different types of milk that you might want to use in your cereal.
+            Select a milk subgroup to see specific examples of products in that group,
+            and select multiple to compare products across groups. </p>
+        <div class='tableauPlaceholder' id='viz1691357011653' style='position: relative'><noscript><a href='#'><img
+                        alt='What is your milk of choice? '
+                        src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;An&#47;Andrew_Milk-Comparison-v3_23-07-24&#47;MilkComparisonDashboard&#47;1_rss.png'
+                        style='border: none' /></a></noscript><object class='tableauViz' style='display:none;'>
+                <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+                <param name='embed_code_version' value='3' />
+                <param name='site_root' value='' />
+                <param name='name' value='Andrew_Milk-Comparison-v3_23-07-24&#47;MilkComparisonDashboard' />
+                <param name='tabs' value='no' />
+                <param name='toolbar' value='yes' />
+                <param name='static_image'
+                    value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;An&#47;Andrew_Milk-Comparison-v3_23-07-24&#47;MilkComparisonDashboard&#47;1.png' />
+                <param name='animate_transition' value='yes' />
+                <param name='display_static_image' value='yes' />
+                <param name='display_spinner' value='yes' />
+                <param name='display_overlay' value='yes' />
+                <param name='display_count' value='yes' />
+                <param name='language' value='en-US' />
+                <param name='filter' value='publish=yes' />
+            </object></div>
+        <script type='text/javascript'>
+            var divElement = document.getElementById('viz1691357011653');
+            var vizElement = divElement.getElementsByTagName('object')[0];
+            if (divElement.offsetWidth > 800) {
+                vizElement.style.width = '1000px';
+                vizElement.style.height = '827px';
+            } else if (divElement.offsetWidth > 500) {
+                vizElement.style.width = '1000px';
+                vizElement.style.height = '827px';
+            } else {
+                vizElement.style.width = '100%';
+                vizElement.style.height = '1327px';
+            }
+            var scriptElement = document.createElement('script');
+            scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+            vizElement.parentNode.insertBefore(scriptElement, vizElement);                
+        </script>
+    </div>
+
+    <!-- Gluten Free -->
+    <div id="gluten" , class="container-fluid bg-2 text-center">
+        <h3 class="margin">Gluten-free alternatives</h3>
+        <p>This visualization helps people with Gluten senstivity to choose breakfast cereals from different brands and
+            types.
+            You can also selects cereals based on sugar, calorie and protein intake.
+            Use the dropdown and/or sliders to make your selections. </p>
+        <div class='tableauPlaceholder' id='viz1691529565953' style='position: relative'><noscript><a href='#'><img
+                        alt='Dashboard 1 '
+                        src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Gl&#47;Gluten-Free-Cereals-Grouped_v2&#47;Dashboard1&#47;1_rss.png'
+                        style='border: none' /></a></noscript><object class='tableauViz' style='display:none;'>
+                <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+                <param name='embed_code_version' value='3' />
+                <param name='site_root' value='' />
+                <param name='name' value='Gluten-Free-Cereals-Grouped_v2&#47;Dashboard1' />
+                <param name='tabs' value='no' />
+                <param name='toolbar' value='yes' />
+                <param name='static_image'
+                    value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Gl&#47;Gluten-Free-Cereals-Grouped_v2&#47;Dashboard1&#47;1.png' />
+                <param name='animate_transition' value='yes' />
+                <param name='display_static_image' value='yes' />
+                <param name='display_spinner' value='yes' />
+                <param name='display_overlay' value='yes' />
+                <param name='display_count' value='yes' />
+                <param name='language' value='en-US' />
+                <param name='filter' value='publish=yes' />
+            </object></div>
+        <script
+            type='text/javascript'>                    var divElement = document.getElementById('viz1691529565953'); var vizElement = divElement.getElementsByTagName('object')[0]; if (divElement.offsetWidth > 800) { vizElement.style.width = '1200px'; vizElement.style.height = '827px'; } else if (divElement.offsetWidth > 500) { vizElement.style.width = '1200px'; vizElement.style.height = '827px'; } else { vizElement.style.width = '100%'; vizElement.style.height = '927px'; } var scriptElement = document.createElement('script'); scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js'; vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+    </div>
+
+    <!-- Footer -->
+    <footer class="container-fluid bg-4 text-center">
+        <div class="row">
+            <div class="col-lg-12">
+                <h3>UC Berkeley School of Information - 209 Data Visualization final project - Contributors:</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-1"></div>
+            <div class="col-sm-2">
+                <p>Julia Bobrovskiy</p>
+            </div>
+            <div class="col-sm-2">
+                <p>Andrew Higgins</p>
+            </div>
+            <div class="col-sm-2">
+                <p>Karthik Ragunathan</p>
+            </div>
+            <div class="col-sm-2">
+                <p>Harshita Shangari</p>
+            </div>
+            <div class="col-sm-2">
+                <p>Mohith Subbarao</p>
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+        <div class="row">
+            <div class="col-sm-1"></div>
+            <div class="col-sm-2">
+                <p><small>juliabobrovskiy @ischool.berkeley.edu</small></p>
+            </div>
+            <div class="col-sm-2">
+                <p><small>aj.higgins @ischool.berkeley.edu</small></p>
+            </div>
+            <div class="col-sm-2">
+                <p><small>karthik @ischool.berkeley.edu</small></p>
+            </div>
+            <div class="col-sm-2">
+                <p><small>hshangari @ischool.berkeley.edu</small></p>
+            </div>
+            <div class="col-sm-2">
+                <p><small>mohithmsubbarao @ischool.berkeley.edu</small></p>
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+        <div class="row"></div>
+        <div class="row">
+            <div class="col-lg-12">
+                <p>Bootstrap Theme Made By <a href="https://www.w3schools.com" target="_blank" rel="noopener noreferrer">www.w3schools.com</a></p< /div>
+            </div>
+    </footer>
+
+</body>
+
+</html>

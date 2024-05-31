@@ -1,6 +1,6 @@
 import streamlit as st
 
-st.set_page_config(page_title='About Andrew', layout='wide', page_icon='👤', initial_sidebar_state='auto')
+st.set_page_config(page_title='SkinScreen', layout='wide', page_icon='☀️', initial_sidebar_state='auto')
 
 # ----- Sidebar -----
 
@@ -14,8 +14,16 @@ with st.sidebar:
         """
     )
     st.image('static/image/profile_pic.png', caption="Andrew at a mountain biking & hotdog eating competiton in Salida, CO")
-    st.markdown('## Contact me')
-    st.html('<a href="mailto:ajhiggins96@gmail.com">ajhiggins96@gmail.com</a>')
+    row0 = st.columns([0.1, 0.9])
+    with row0[0]:
+        st.image('https://mailmeteor.com/logos/assets/PNG/Gmail_Logo_512px.png', width=25)
+    with row0[1]:
+        st.html('<a href="mailto:ajhiggins96@gmail.com">ajhiggins96@gmail.com</a>')
+    row1 = st.columns([0.1, 0.9])
+    with row1[0]:
+        st.image('https://camo.githubusercontent.com/dfe7e80288901f8d5e8de7562d6f94491e2a7f8042316fd544fe3b6364b63783/68747470733a2f2f69636f6e2d6c6962726172792e636f6d2f696d616765732f6769746875622d69636f6e2d77686974652f6769746875622d69636f6e2d77686974652d362e6a7067', width=25)
+    with row1[1]:
+        st.html('<a href="https://github.com/ajhiggins96/Portfolio-Site">website source</a>')
 
 # ----- Body -----
 
@@ -41,21 +49,49 @@ st.markdown("## Project plan and execution")
 with st.container(border=True):
     st.markdown("### Tech Stack")
 
-    cols = st.columns(7)
+    # Fix column formatting on mobile
+    num_cols = 7
+    width = 100/num_cols
+    st.write(
+        f"""
+        <style>
+            .st-emotion-cache-1b2d4l5 \u007b
+                width: calc({width}% - 1rem) !important;
+                flex: 1 1 calc({width}% - 1rem) !important;
+                min-width: calc({width}% - 1rem) !important;
+            \u007d
+        </style>
+        """, 
+        unsafe_allow_html=True
+    )
+    cols = st.columns(num_cols)
     with cols[0]:
-        st.image(static_dir + 'python.png', caption='Python', use_column_width='always')
+        st.image(static_dir + 'python.png', use_column_width='always')
     with cols[1]:
-        st.image(static_dir + 'tensorflow.png', caption='TensorFlow', use_column_width='always')
+        st.image(static_dir + 'tensorflow.png', use_column_width='always')
     with cols[2]:
-        st.image(static_dir + 'fastapi.png', caption='FastAPI', use_column_width='always')
+        st.image(static_dir + 'fastapi.png', use_column_width='always')
     with cols[3]:
-        st.image(static_dir + 'aws.png', caption='AWS', use_column_width='always')
+        st.image(static_dir + 'aws.png', use_column_width='always')
     with cols[4]:
-        st.image(static_dir + 'sagemaker.png', caption='Amazon SageMaker', use_column_width='always')
+        st.image(static_dir + 'sagemaker.png', use_column_width='always')
     with cols[5]:
-        st.image(static_dir + 'lightsail.png', caption='Amazon Ligthsail', use_column_width='always')
+        st.image(static_dir + 'lightsail.png', use_column_width='always')
     with cols[6]:
-        st.image(static_dir + 'html.png', caption='HTML & CSS', use_column_width='always')
+        st.image(static_dir + 'html.png', use_column_width='always')
+
+    with st.expander("Listed from left to right:"):
+        st.markdown(
+            """
+            - Python
+            - TensorFlow
+            - FastAPI
+            - AWS
+            - Amazon Sagemaker
+            - Amazon Lightsail
+            - HTML & CSS
+            """ 
+        )
    
 with st.container(border=True):
     st.markdown(

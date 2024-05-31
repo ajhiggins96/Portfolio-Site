@@ -11,5 +11,8 @@ port = 8501
 enableStaticServing = true
 runOnSave = true
 
+[client]
+toolbarMode = "viewer"
+
 [logger]
 level = "warning"

@@ -161,5 +161,3 @@ cython_debug/
 
 # iOS finder junk
 .DS_Store
-
-openai_api_key.txt

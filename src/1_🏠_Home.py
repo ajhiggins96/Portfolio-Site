@@ -17,43 +17,55 @@ with st.sidebar:
         """
     )
     st.image('static/image/profile_pic.png', caption="Andrew at a mountain biking & hotdog eating competiton in Salida, CO")
-    st.subheader('Contact me')
-    st.html('<a href="mailto:ajhiggins96@gmail.com">ajhiggins96@gmail.com</a>')
+    row0 = st.columns([0.1, 0.9])
+    with row0[0]:
+        st.image('https://mailmeteor.com/logos/assets/PNG/Gmail_Logo_512px.png', width=25)
+    with row0[1]:
+        st.html('<a href="mailto:ajhiggins96@gmail.com">ajhiggins96@gmail.com</a>')
+    row1 = st.columns([0.1, 0.9])
+    with row1[0]:
+        st.image('https://camo.githubusercontent.com/dfe7e80288901f8d5e8de7562d6f94491e2a7f8042316fd544fe3b6364b63783/68747470733a2f2f69636f6e2d6c6962726172792e636f6d2f696d616765732f6769746875622d69636f6e2d77686974652f6769746875622d69636f6e2d77686974652d362e6a7067', width=25)
+    with row1[1]:
+        st.html('<a href="https://github.com/ajhiggins96/Portfolio-Site">website source</a>')
+
 
 # ----- Body -----
 
+primary_color = st.get_option('theme.primaryColor')
+
 # Intro
 with st.container():
-    st.subheader("Hi, I'm Andrew Higgins 👋")
+    st.markdown(
+        f"""
+            # 👋 Hi, I'm Andrew Higgins
+            
+            #### I'm a <span style='color:{primary_color}'>Data Scientist and Engineer</span> seeking a role at a company that values the names and faces behind the numbers.  
+            
+            Before completing my **Master of Information and Data Science** degree at UC Berkeley, I began my career as an **Additive Manufacturing Engineer** at Visser Precision LLC.
+            I was quickly promoted to **Department Manager** of all metal 3D Printing operations. 
+            For undergrad, I received a BS in Mechanical Engineering from the University of Denver, during which I also worked a couple of full-time internships.   
 
+            ⬅️ Explore the pages in the sidebar to learn more about me, my past work, and my future goals.
+        """,
+        unsafe_allow_html=True
+    )
+    st.link_button('📄 Resume', '/About_me?tab=Resume', type='primary')
+
+# Projects
+with st.container(border=True):
     st.markdown(
         """
-            I am seeking a challenging role as a **data scientist, analyst, or engineer** at a company that values the names and faces behind the numbers.  
-            
-            Before completing a Master of Information and Data Science at UC Berkeley, I began a career as an Additive Manufacturing Engineer at Visser Precision LLC. I then quickly rose to become Department Manager of all Metal 3D Printing operations. I received a BS Mechanical Engineering at the University of Denver, during which I worked a couple of full-time Mechanical Engineering internships.   
-
-            Explore the pages in the sidebar to learn more about me, my past work, and my future goals.
+        ### 📊 Data Science Projects
         """
     )
-
-# Chat bot
-with st.container():
-    st.subheader("🤖 Ask my chat bot assistant about me")
-    with st.expander("Enter your OpenAI API Key first"):
-        st.markdown("Use an existing key or generate one [here](https://platform.openai.com/settings/profile?tab=api-keys).  \nIt will never be saved here, I promise.")
-        openai_api_key = st.text_input("Key (starts with 'sk-')", type="password")
-        
-    user_input = st.text_input("Enter your question:", key="input", placeholder="e.g. What does Andrew like to do for fun?")
-    if user_input:
-        if not openai_api_key.startswith('sk-'):
-            st.warning('Please enter your OpenAI API key above.', icon='⚠')
-        if openai_api_key.startswith('sk-'):
-            #st.info(ask_bot(user_input, openai_api_key))
-            st.markdown("### ⚠️🚧 Bot Under Construction 🚧⚠️ \nTry again another day.")
+    cols = st.columns(4)
+    with cols[0]:
+        st.page_link('pages/2_☀️_SkinScreen.py', label='$\\Large{\\textsf{\\textcolor{'+primary_color+'}{SkinScreen}}}$')
+        st.image('static/home/skinscreen.png')
+        st.markdown("End-to-end image classification product.")
 
 # Skills
-with st.container():
-
+with st.container(border=True):
     # Load a Lottie animation from a URL
     def load_lottieurl(url: str):
         r = requests.get(url)
@@ -70,7 +82,21 @@ with st.container():
     docker_lottie = load_lottieurl("https://lottie.host/6c028fe7-387f-4b45-b05f-f6cd10528c6b/zrKBaeepIf.json")
     ms_lottie = load_lottieurl("https://lottie.host/35c41eff-f14c-4ebb-af82-a92435dbb2e9/NzmQhwdrZ0.json")
 
-    st.subheader('🧰 Skills')
+    st.markdown('### 🧰 Skills')
+
+    # Fix column formatting on mobile
+    st.write(
+        """
+        <style>
+            .st-emotion-cache-12w0qpk {
+                width: calc(25% - 1rem) !important;
+                flex: 1 1 calc(25% - 1rem) !important;
+                min-width: calc(25% - 1rem) !important;
+            }
+        </style>
+        """, 
+        unsafe_allow_html=True
+    )
 
     row0 = st.columns(4)
     with row0[0]:
