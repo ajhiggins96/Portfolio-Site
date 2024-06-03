@@ -2,7 +2,7 @@ import streamlit as st
 import streamlit_timeline as timeline
 import base64
 
-st.set_page_config(page_title='About Andrew', layout='wide', page_icon='👤', initial_sidebar_state='auto')
+st.set_page_config(page_title='Andrew Higgins - About', layout='wide', page_icon='👤', initial_sidebar_state='auto')
 
 # ----- Sidebar -----
 

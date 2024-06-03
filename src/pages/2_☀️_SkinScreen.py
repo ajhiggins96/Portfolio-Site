@@ -1,6 +1,6 @@
 import streamlit as st
 
-st.set_page_config(page_title='SkinScreen', layout='wide', page_icon='☀️', initial_sidebar_state='auto')
+st.set_page_config(page_title='Andrew Higgins - SkinScreen', layout='wide', page_icon='☀️', initial_sidebar_state='auto')
 
 # ----- Sidebar -----
 
@@ -30,7 +30,13 @@ with st.sidebar:
 primary_color = st.get_option('theme.primaryColor')
 static_dir = "static/skinscreen/"
 
-st.html(f"<h1><span style='color:{primary_color}'>SkinScreen</span>: Your Go-to Skin Health Monitoring Website</h1><em>Built in 14 weeks for UC Berkelery MIDS Final Capstone course, spring 2024.</em>")
+st.markdown(
+    f"""
+    # <span style='color:{primary_color}'>SkinScreen</span>: Your Go-to Skin Health Monitoring Website
+    *Team project built in 14 weeks for* UC Berkeley MIDS Capstone, *winter 2024.*
+    """,
+    unsafe_allow_html=True
+)
 
 st.markdown(
     """
@@ -80,7 +86,7 @@ with st.container(border=True):
     with cols[6]:
         st.image(static_dir + 'html.png', use_column_width='always')
 
-    with st.expander("Listed from left to right:"):
+    with st.expander("Show list"):
         st.markdown(
             """
             - Python

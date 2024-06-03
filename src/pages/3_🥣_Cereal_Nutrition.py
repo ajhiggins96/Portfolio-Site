@@ -1,6 +1,6 @@
 import streamlit as st
 
-st.set_page_config(page_title='Cereal Nutrition', layout='wide', page_icon='🥣', initial_sidebar_state='auto')
+st.set_page_config(page_title='Andrew Higgins - Cereal Nutrition', layout='wide', page_icon='🥣', initial_sidebar_state='auto')
 
 # ----- Sidebar -----
 
@@ -30,11 +30,10 @@ with st.sidebar:
 primary_color = st.get_option('theme.primaryColor')
 static_dir = "static/cereal/"
 
-
 st.markdown(
     f"""
     # Cereal Nutrition Data Visualization with <span style='color:{primary_color}'>Tableau</span>
-    *Built in 14 weeks for UC Berkelery Data Visualization course, summer 2023.*
+    *Team project built in 6 weeks for* Data Visualization *course at UC Berkeley, summer 2023.*
     """,
     unsafe_allow_html=True
 )
@@ -76,7 +75,7 @@ with st.container(border=True):
         """
         ## Team Project Website
 
-        Entirety of the original project site embedded below. Navbar disabled becuase embedding breaks the links.
+        Entirety of the original project site embedded below. Navbar disabled because embedding breaks the links.
         """
     )
     with open('static/cereal/cereal.html', 'r') as f:
