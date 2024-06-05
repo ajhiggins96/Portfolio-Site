@@ -23,7 +23,7 @@ with st.sidebar:
     with row1[0]:
         st.image('https://camo.githubusercontent.com/dfe7e80288901f8d5e8de7562d6f94491e2a7f8042316fd544fe3b6364b63783/68747470733a2f2f69636f6e2d6c6962726172792e636f6d2f696d616765732f6769746875622d69636f6e2d77686974652f6769746875622d69636f6e2d77686974652d362e6a7067', width=25)
     with row1[1]:
-        st.html('<a href="https://github.com/ajhiggins96/Portfolio-Site">website source</a>')
+        st.html('<a href="https://github.com/ajhiggins96/Portfolio-Site/tree/main">website source</a>')
 
 # ----- Body -----
 
