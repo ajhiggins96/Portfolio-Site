@@ -99,20 +99,6 @@ with st.container(border=False):
 
     st.markdown('### 🧰 Skills')
 
-    # Fix column formatting on mobile
-    st.write(
-        """
-        <style>
-            .st-emotion-cache-12w0qpk {
-                width: calc(25% - 1rem) !important;
-                flex: 1 1 calc(25% - 1rem) !important;
-                min-width: calc(25% - 1rem) !important;
-            }
-        </style>
-        """, 
-        unsafe_allow_html=True
-    )
-
     row0 = st.columns(4)
     with row0[0]:
         st_lottie(python_lottie, height=100)

@@ -33,7 +33,9 @@ static_dir = "static/cereal/"
 st.markdown(
     f"""
     # Cereal Nutrition Data Visualization with <span style='color:{primary_color}'>Tableau</span>
-    *Team project built in 6 weeks for* Data Visualization *course at UC Berkeley, summer 2023.*
+    *Team project built in 6 weeks for* Data Visualization *course at UC Berkeley, summer 2023.*  
+
+    <sup><sub>This page is not intended for viewing on mobile</sub></sup>
     """,
     unsafe_allow_html=True
 )
