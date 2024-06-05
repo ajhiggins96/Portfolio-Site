@@ -57,23 +57,25 @@ with st.container(border=False):
     st.markdown("### 📊 Data Science Projects")
     cols = st.columns(4)
     with cols[0]:
-        if st.button('End-to-end', use_container_width=True, type='primary'):
+        if st.button('End-to-end', use_container_width=True):
             st.switch_page('pages/2_☀️_SkinScreen.py')
-        st.markdown("**SkinScreen**: skin image deep learning classification product")
+        st.markdown("**SkinScreen**: deep learning image classification product")
         st.image('static/home/skinscreen.png')
-        
     with cols[1]:
-        if st.button('Data Visualization', use_container_width=True, type='primary'):
+        if st.button('Data Visualization', use_container_width=True):
             st.switch_page('pages/3_🥣_Cereal_Nutrition.py')
         st.markdown("Interactive Tableau visualizations with nutrition data")
         st.image('static/home/datavis.png')
     with cols[2]:
-        if st.button("Data Engineering", use_container_width=True, type='primary'):
+        if st.button("Data Engineering", use_container_width=True):
             st.switch_page("pages/4_☁️_Machine_Learning_API.py")
         st.markdown("Robust & scalable ML endpoint deployment in Azure cloud")
         st.image('static/home/mlapi.png')
     with cols[3]:
-        pass
+        if st.button("Large Lang. Models", use_container_width=True):
+            st.switch_page("pages/5_💬_BoolQ_NLP_Research.py")
+        st.markdown("NLP research comparing T5 and BERT to a SotA Google model")
+        st.image('static/home/nlp.png')
         
 st.divider()
 
