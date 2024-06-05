@@ -26,7 +26,6 @@ with st.sidebar:
     with row1[1]:
         st.html('<a href="https://github.com/ajhiggins96/Portfolio-Site">website source</a>')
 
-
 # ----- Body -----
 
 primary_color = st.get_option('theme.primaryColor')
