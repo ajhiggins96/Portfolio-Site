@@ -972,6 +972,23 @@ files = [
 streamlit = ">=0.63"
 
 [[package]]
+name = "streamlit-pdf-viewer"
+version = "0.0.12"
+description = "Streamlit component for PDF visualisation and manipulation"
+optional = false
+python-versions = ">=3.7"
+files = [
+    {file = "streamlit_pdf_viewer-0.0.12-py3-none-any.whl", hash = "sha256:c01a69469cb2d19673e8c6d68c440fc8a6c813df05b7f863aa4653d71cb8ef88"},
+    {file = "streamlit_pdf_viewer-0.0.12.tar.gz", hash = "sha256:6f00b354b57a384f4c23c3b9be01be54b0fabe96acd63893e1759cf5a891cfa5"},
+]
+
+[package.dependencies]
+streamlit = ">=0.63"
+
+[package.extras]
+devel = ["wheel"]
+
+[[package]]
 name = "streamlit-timeline"
 version = "0.0.2"
 description = "A Streamlit custom component to display a timeline"
@@ -1127,4 +1144,4 @@ watchmedo = ["PyYAML (>=3.10)"]
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.10"
-content-hash = "4829dc624e700033c2e159f2f500a8f7c7ad6afd5bb608838f9552923582a745"
+content-hash = "4670002a7b6ac6940ac53fec1edb8fa031282802fed44c23a1dec798c84629eb"

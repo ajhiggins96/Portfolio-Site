@@ -54,26 +54,37 @@ st.markdown(
     unsafe_allow_html=True
 )
 
-def display_pdf(path):
-    # Opening pdf report from file path
-    with open(path, 'rb') as f:
-        base64_pdf = base64.b64encode(f.read()).decode('utf-8')
+# def display_pdf(path):
+#     # Opening pdf report from file path
+#     with open(path, 'rb') as f:
+#         base64_pdf = base64.b64encode(f.read()).decode('utf-8')
 
-    # Embedding PDF in HTML
-    pdf_display =  f"""<iframe
-        class="pdfobject"
-        type="application/pdf"
-        title="Embedded PDF"
-        src="data:application/pdf;base64,{base64_pdf}"
-        style="overflow: auto; width: 100%; height: 80vh;">
-    </iframe>
+#     # Embedding PDF in HTML
+#     pdf_display =  f"""<embed
+#         class="pdfobject"
+#         type="application/pdf"
+#         title="Embedded PDF"
+#         src="data:application/pdf;base64,{base64_pdf}"
+#         style="overflow: auto; width: 100%; height: 80vh;">
+#     """
+
+#     # Displaying File
+#     st.markdown(pdf_display, unsafe_allow_html=True)
+
+def display_pdf(url):
+    # Opening pdf report from file path
+
+    pdf_display =  f"""<embed 
+        src="{url}" 
+        style="overflow: auto; width: 100%; height: 80vh;" 
+        allow="autoplay">
     """
 
     # Displaying File
     st.markdown(pdf_display, unsafe_allow_html=True)
 
 st.markdown("## Slide Deck")
-display_pdf(static_dir + 'NLP_presentation.pdf')
+display_pdf("https://drive.google.com/file/d/1r7nxuHq7t5WfYe25mDH0h0zp14Li13CH/preview?usp=sharing")
 
 st.markdown("## Complete Paper")
 display_pdf(static_dir + 'NLP_report.pdf')
