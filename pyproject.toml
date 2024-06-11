@@ -10,7 +10,6 @@ python = "^3.10"
 streamlit = "^1.33.0"
 streamlit-timeline = "*"
 streamlit-lottie = "*"
-streamlit-pdf-viewer = "*"
 
 [build-system]
 requires = ["poetry-core"]

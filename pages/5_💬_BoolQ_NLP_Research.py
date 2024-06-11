@@ -84,10 +84,10 @@ def display_pdf(url):
     st.markdown(pdf_display, unsafe_allow_html=True)
 
 st.markdown("## Slide Deck")
-display_pdf("https://drive.google.com/file/d/1r7nxuHq7t5WfYe25mDH0h0zp14Li13CH/preview?usp=sharing")
+display_pdf("https://drive.google.com/file/d/1r7nxuHq7t5WfYe25mDH0h0zp14Li13CH/preview")
 
 st.markdown("## Complete Paper")
-display_pdf(static_dir + 'NLP_report.pdf')
+#display_pdf(static_dir + 'NLP_report.pdf')
 
 st.markdown('## Jupyter notebook')
 with open(static_dir + 'NLP_code.html', 'rb') as f:
