@@ -1,39 +1,19 @@
 import streamlit as st
-import streamlit.components.v1 as components
+
+from utils import sidebar, display_mermaid, PRIMARY_COLOR
+
 
 st.set_page_config(page_title="Andrew Higgins - ML API Project", layout='wide', page_icon='☁️')
 
-# ----- Sidebar -----
-
-with st.sidebar:
-    st.markdown(
-        """
-        # Andrew Higgins
-        - Data Scientist (MIDS)  
-        - Mechanical Engineer (BSME)  
-        - Outdoor enthusiast (YEWW)
-        """
-    )
-    st.image('static/image/profile_pic.png', caption="Andrew at a mountain biking & hotdog eating competiton in Salida, CO")
-    row0 = st.columns([0.1, 0.9])
-    with row0[0]:
-        st.image('https://mailmeteor.com/logos/assets/PNG/Gmail_Logo_512px.png', width=25)
-    with row0[1]:
-        st.html('<a href="mailto:ajhiggins96@gmail.com">ajhiggins96@gmail.com</a>')
-    row1 = st.columns([0.1, 0.9])
-    with row1[0]:
-        st.image('https://camo.githubusercontent.com/dfe7e80288901f8d5e8de7562d6f94491e2a7f8042316fd544fe3b6364b63783/68747470733a2f2f69636f6e2d6c6962726172792e636f6d2f696d616765732f6769746875622d69636f6e2d77686974652f6769746875622d69636f6e2d77686974652d362e6a7067', width=25)
-    with row1[1]:
-        st.link_button(label='website source', url='https://github.com/ajhiggins96/Portfolio-Site/tree/main')
+sidebar()
 
 # ----- Body -----
-primary_color = st.get_option('theme.primaryColor')
-text_color = st.get_option('theme.textColor')
+
 static_dir = "static/api/"
 
 st.markdown(
     f"""
-    # Robust API deployed with <span style='color:{primary_color}'>Docker</span> and <span style='color:{primary_color}'>Kubernetes</span>
+    # Robust API deployed with <span style='color:{PRIMARY_COLOR}'>Docker</span> and <span style='color:{PRIMARY_COLOR}'>Kubernetes</span>
     *Solo project built in 14 weeks for* Machine Learning Systems Engineering *course at UC Berkeley, fall 2023*
     """,
     unsafe_allow_html=True
@@ -43,13 +23,13 @@ st.markdown(
     f"""
     ## Project Summary
 
-    The final product is a natural language sentiment classification API hosted on <span style='color:{primary_color}'>Microsoft Azure</span> cloud platfom.
+    The final product is a natural language sentiment classification API hosted on <span style='color:{PRIMARY_COLOR}'>Microsoft Azure</span> cloud platfom.
     
-    The App was built with <span style='color:{primary_color}'>Python's FastAPI</span> package and unit tested with <span style='color:{primary_color}'>pytest</span>.
-    The App and its components were containerized with <span style='color:{primary_color}'>Docker</span>, and deployed with <span style='color:{primary_color}'>Kubernetes</span>.
-    System load performace was improved with <span style='color:{primary_color}'>Redis</span> caching.
-    Incoming and outgoing data validation was implemented with <span style='color:{primary_color}'>Pydantic</span>.
-    Performance metrics were recorded with <span style='color:{primary_color}'>istio</span> and monitored using <span style='color:{primary_color}'>Grafana</span>.
+    The App was built with <span style='color:{PRIMARY_COLOR}'>Python's FastAPI</span> package and unit tested with <span style='color:{PRIMARY_COLOR}'>pytest</span>.
+    The App and its components were containerized with <span style='color:{PRIMARY_COLOR}'>Docker</span>, and deployed with <span style='color:{PRIMARY_COLOR}'>Kubernetes</span>.
+    System load performace was improved with <span style='color:{PRIMARY_COLOR}'>Redis</span> caching.
+    Incoming and outgoing data validation was implemented with <span style='color:{PRIMARY_COLOR}'>Pydantic</span>.
+    Performance metrics were recorded with <span style='color:{PRIMARY_COLOR}'>istio</span> and monitored using <span style='color:{PRIMARY_COLOR}'>Grafana</span>.
 
     The app was load tested with over 1600 requests per second, and it maintained a P99 of only ~800 ms!
     """,
@@ -91,35 +71,6 @@ with st.container(border=True):
             """
         )
 
-def mermaid(code: str, height: int = 500, primary_text_color=text_color) -> None:
-    components.html(
-        f"""
-        <pre class="mermaid">
-            %%{{
-            init: {{
-                'theme': 'base',
-                'themeVariables': {{
-                    'primaryColor': '{primary_color}',
-                    'primaryTextColor': '{primary_text_color}',
-                    'primaryBorderColor': '{text_color}',
-                    'lineColor': '{text_color}',
-                    'secondaryColor': '{primary_color}',
-                    'tertiaryColor': '#ffffff'
-                }}
-            }}
-            }}%%
-            {code}
-        </pre>
-
-        <script type="module">
-            import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
-            mermaid.initialize({{ startOnLoad: true }});
-        </script>
-        """,
-        height=height,
-        scrolling=True
-    )
-
 with st.container(border=True):
     st.markdown("## Cloud Infrastructure")
     cols = st.columns([0.3,0.7])
@@ -140,7 +91,7 @@ with st.container(border=True):
     with cols[1]:
         with open(static_dir + 'app_deployment_flow_diagram.mmd', 'r') as f:
             app_flow = f.read()
-        mermaid(app_flow, height=550, primary_text_color='#000000')
+        display_mermaid(app_flow, height=550, primary_text_color='#000000')
 
 with st.container(border=True):
     st.markdown("## API Sequence Logic")
@@ -162,7 +113,7 @@ with st.container(border=True):
     with cols[1]:
         with open(static_dir + 'api_seq_diagram.mmd', 'r') as f:
             app_seq = f.read()
-        mermaid(app_seq)
+        display_mermaid(app_seq)
 
 with st.container(border=True):
     st.markdown(
