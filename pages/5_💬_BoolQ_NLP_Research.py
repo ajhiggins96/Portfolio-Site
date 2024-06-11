@@ -1,6 +1,8 @@
 import streamlit as st
 import base64
 
+from utils import display_pdf
+
 st.set_page_config(page_title="Andrew Higgins - ML API Project", layout='wide', page_icon='☁️')
 
 # ----- Sidebar -----
@@ -54,40 +56,11 @@ st.markdown(
     unsafe_allow_html=True
 )
 
-# def display_pdf(path):
-#     # Opening pdf report from file path
-#     with open(path, 'rb') as f:
-#         base64_pdf = base64.b64encode(f.read()).decode('utf-8')
-
-#     # Embedding PDF in HTML
-#     pdf_display =  f"""<embed
-#         class="pdfobject"
-#         type="application/pdf"
-#         title="Embedded PDF"
-#         src="data:application/pdf;base64,{base64_pdf}"
-#         style="overflow: auto; width: 100%; height: 80vh;">
-#     """
-
-#     # Displaying File
-#     st.markdown(pdf_display, unsafe_allow_html=True)
-
-def display_pdf(url):
-    # Opening pdf report from file path
-
-    pdf_display =  f"""<embed 
-        src="{url}" 
-        style="overflow: auto; width: 100%; height: 80vh;" 
-        allow="autoplay">
-    """
-
-    # Displaying File
-    st.markdown(pdf_display, unsafe_allow_html=True)
-
 st.markdown("## Slide Deck")
 display_pdf("https://drive.google.com/file/d/1r7nxuHq7t5WfYe25mDH0h0zp14Li13CH/preview")
 
 st.markdown("## Complete Paper")
-#display_pdf(static_dir + 'NLP_report.pdf')
+display_pdf("https://drive.google.com/file/d/14CgmFl9LA_ghNJsAubfBLByQd-4ZPmga/preview")
 
 st.markdown('## Jupyter notebook')
 with open(static_dir + 'NLP_code.html', 'rb') as f:
