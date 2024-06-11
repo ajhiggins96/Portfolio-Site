@@ -1,4 +1,5 @@
 import streamlit as st
+import streamlit.components.v1 as components
 
 st.set_page_config(page_title="Andrew Higgins - ML API Project", layout='wide', page_icon='☁️')
 
@@ -91,7 +92,7 @@ with st.container(border=True):
         )
 
 def mermaid(code: str, height: int = 500, primary_text_color=text_color) -> None:
-    st.components.v1.html(
+    components.html(
         f"""
         <pre class="mermaid">
             %%{{

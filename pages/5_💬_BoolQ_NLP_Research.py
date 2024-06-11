@@ -1,4 +1,5 @@
 import streamlit as st
+import streamlit.components.v1 as components
 import base64
 
 from utils import display_pdf
@@ -65,4 +66,4 @@ display_pdf("https://drive.google.com/file/d/14CgmFl9LA_ghNJsAubfBLByQd-4ZPmga/p
 st.markdown('## Jupyter notebook')
 with open(static_dir + 'NLP_code.html', 'rb') as f:
     jupyter_html = f.read()
-st.components.v1.html(jupyter_html, height=800, scrolling=True)
+components.html(jupyter_html, height=800, scrolling=True)

@@ -1,4 +1,5 @@
 import streamlit as st
+import streamlit.components.v1 as components
 
 st.set_page_config(page_title='Andrew Higgins - Cereal Nutrition', layout='wide', page_icon='🥣', initial_sidebar_state='auto')
 
@@ -70,7 +71,7 @@ with st.container(border=True):
     )
     with open('static/cereal/milk.html', 'r') as f:
         milk_html = f.read()
-    st.components.v1.html(milk_html, height=800)
+    components.html(milk_html, height=800)
 
 with st.container(border=True):
     st.markdown(
@@ -82,4 +83,4 @@ with st.container(border=True):
     )
     with open('static/cereal/cereal.html', 'r') as f:
         cereal_html = f.read()
-    st.components.v1.html(cereal_html, height=800, scrolling=True)
+    components.html(cereal_html, height=800, scrolling=True)

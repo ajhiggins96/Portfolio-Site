@@ -1,5 +1,6 @@
 import streamlit as st
 import streamlit_timeline as timeline
+import streamlit.components.v1 as components
 import base64
 
 from utils import display_pdf
@@ -106,7 +107,7 @@ with resume:
 query_params = st.query_params
 if 'tab' in query_params.keys():
     tab_index = tab_names.index(query_params['tab'])
-    st.components.v1.html(
+    components.html(
         f"""
         <script>
             var tab = window.parent.document.getElementById('tabs-bui3-tab-{tab_index}');
