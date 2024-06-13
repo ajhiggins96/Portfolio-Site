@@ -76,7 +76,7 @@ with resume:
             type='primary'
         )
 
-    display_pdf("https://drive.google.com/file/d/1WmSoi2qe4FSfGmJ22V27BUu4Jqk5C6tI/preview")
+    display_pdf("https://drive.google.com/file/d/1DarJbGrVDl6ts7CFpR186XOB-8_L2S9_/preview")
 
     
 
