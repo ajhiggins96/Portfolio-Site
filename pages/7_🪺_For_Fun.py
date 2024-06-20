@@ -13,7 +13,7 @@ st.set_page_config(page_title="Purple Martins", page_icon='🪶')
 
 sidebar()
 
-st.markdown("# Patty Mag's Purple Martin Plots")
+st.markdown("# PMag's Purple Martin Plots")
 
 def load_csv(file):
     return pd.read_csv(file, index_col=0, parse_dates=True).fillna(0).astype(int)
