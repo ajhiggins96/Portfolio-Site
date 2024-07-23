@@ -36,7 +36,7 @@ with hobbies:
     with cols[2]:
         st.image('static/hobbies/alps.jpeg', caption='A trip to the alps for the best skiing of my life.')
     with cols[3]:
-        st.video('static/hobbies/crash_reel.mp4', autoplay=True, muted=True)
+        st.video('https://youtu.be/l4mtyhwRJEM', autoplay=True, muted=True)
         st.caption("Crash reel 2024. If you're not falling you're not trying")
 
     st.markdown("## Being outdoors rejuvinates me")
@@ -76,7 +76,7 @@ with resume:
             type='primary'
         )
 
-    display_pdf("https://drive.google.com/file/d/1DarJbGrVDl6ts7CFpR186XOB-8_L2S9_/preview")
+    display_pdf("https://drive.google.com/file/d/1KrnNHMq1Ms0DurWEL9JpylGb2FjroWzp/preview")
 
     
 
