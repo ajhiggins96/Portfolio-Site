@@ -4,7 +4,7 @@ import streamlit.components.v1 as components
 from utils import sidebar, display_pdf, PRIMARY_COLOR
 
 
-st.set_page_config(page_title="Andrew Higgins - ML API Project", layout='wide', page_icon='☁️')
+st.set_page_config(page_title="Andrew Higgins - NLP Research Paper", layout='wide', page_icon='💬')
 
 sidebar()
 
