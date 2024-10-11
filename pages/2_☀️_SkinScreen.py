@@ -23,8 +23,9 @@ st.markdown(
     """
     ## Product Summary
 
-    SkinScreen is a fully end-to-end Machine Learning product. The web app's function to classify user skin conditions with computer vision technology. 
-    The website allows users to upload a photo of their skin lesion, and the app returns a preliminary diagnosis, a confidence interval, and additional information about the skin condition.
+    SkinScreen is a fully end-to-end machine learning product whose function is to classify user skin conditions with computer vision technology. 
+    Users upload a photo of their skin lesion, and the website returns a preliminary diagnosis, a confidence interval, and additional information 
+    about the potential skin condition.
     """
 )
 
@@ -87,7 +88,7 @@ with st.container(border=True):
 
         **58,000** training and **19,000** testing images originally curated by the [International Skin Imaging Collaboration (ISIC)](https://challenge.isic-archive.com/data/#2019).
 
-        Union of 2019 and 2020 Challenge datasets. Images belong to 10 different classes, and the 6 classes with the highest cardinality were ultimately used.
+        Union of 2019 and 2020 Challenge datasets. Images belong to 10 different classes, and the 6 classes with the highest cardinality were ultimately used due to time constraints.
         """
     )
     cols = st.columns([0.6, 0.4])
