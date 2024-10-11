@@ -28,12 +28,12 @@ with st.container(border=True):
         ## Project Summary
 
         The final product is a website comprised of five **interacive** data visualizations that use data from the USDA [National Nutrient Database for Standard Reference](https://data.nal.usda.gov/dataset/composition-foods-raw-processed-prepared-usda-national-nutrient-database-standard-reference-release-28-0).
-        The visualizations try to meet the following user questions:
+        The visualizations are based on the following investigative questions:
         1. How do the **macronutrients** of different cereal products compare?
         2. What kind of trade-off exists between **calories and sugar** in cereals?
         3. Which brands are a good source of different **micronutrients**?
         4. *How does cow's milk compare to **non-dairy alternatives**?
-        5. How to **gluten-free alternatives** compare?
+        5. How do **gluten-free alternatives** compare?
 
         <sup><sub>*my contribution</sub></sup>
         """, 
@@ -59,7 +59,7 @@ with st.container(border=True):
         """
         ## Team Project Website
 
-        Entirety of the original project site embedded below. Navbar disabled because embedding breaks the links.
+        Entirety of the original project site is embedded below. Navbar is disabled because embedding with Streamlit breaks those links.
         """
     )
     with open('static/cereal/cereal.html', 'r') as f:

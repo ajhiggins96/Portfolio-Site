@@ -84,7 +84,7 @@ with st.container(border=True):
             - Distinct production and deployment environments configured with **Kubernetes Kustomizations**.
             - App hosted in **Microsoft Azure Cloud**. *
 
-            <sup><sub>*major Azure configuration was done by instrustors: DNS, ingress gateways, resource groups</sub></sup>
+            <sup><sub>*major Azure configuration was done by instructors: DNS, ingress gateways, resource groups</sub></sup>
             """, 
             unsafe_allow_html=True
         )
@@ -103,10 +103,10 @@ with st.container(border=True):
             1. Recieve POST payload from client and validate with **Pydantic**.
             2. Return HTML error if schema is violated.
             3. Check request payload against **Redis** cache.
-            4. Return cached prediction to API if it exists.
+            4. Return cached prediction to App if it exists.
             5. Invoke model with novel values.
-            6. Store prediction value in API.
-            7. Store request:prediction key-value pair in cache.
+            6. Store prediction value in App.
+            7. Store new request-prediction key-value pair in cache.
             8. Return prediction payload to client.
             """
         )
@@ -124,7 +124,7 @@ with st.container(border=True):
 
         Load testing was performed with 10 simulated users over the course of 10 minutes, with a ramp-up period of 30 seconds and a ramp-down period of 3 minutes. Test data was generated to achieve a cache hit rate of 95%.
 
-        The app passed load testing, with P(99) below the 2 second threshold. In fact, even P(99.99) was below 2 seconds!  
+        The app passed load testing, with P(99) below the 2 second target threshold. In fact, even P(99.99) was below 2 seconds! (an opportunity for compute cost-savings)  
         During peak load, the replicaset scaled up to 6 pods.
         """
     )

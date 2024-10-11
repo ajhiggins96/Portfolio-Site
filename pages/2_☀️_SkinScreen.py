@@ -23,7 +23,7 @@ st.markdown(
     """
     ## Product Summary
 
-    SkinScreen is a fully end-to-end machine learning product whose function is to classify user skin conditions with computer vision technology. 
+    SkinScreen is an end-to-end machine learning product whose function is to classify user skin conditions with computer vision technology. 
     Users upload a photo of their skin lesion, and the website returns a preliminary diagnosis, a confidence interval, and additional information 
     about the potential skin condition.
     """

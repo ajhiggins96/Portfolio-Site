@@ -39,7 +39,7 @@ st.markdown("## Slide Deck")
 display_pdf("https://drive.google.com/file/d/1r7nxuHq7t5WfYe25mDH0h0zp14Li13CH/preview")
 
 st.markdown("## Complete Paper")
-display_pdf("https://drive.google.com/file/d/14CgmFl9LA_ghNJsAubfBLByQd-4ZPmga/preview")
+display_pdf("https://drive.google.com/file/d/1APDYJfRShLM8ZE5U62rWRqcBhkJThjIO/preview")
 
 st.markdown('## Jupyter notebook')
 with open(static_dir + 'NLP_code.html', 'rb') as f:
